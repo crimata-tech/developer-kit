@@ -14,6 +14,8 @@ class App(AppBare):
         AppBare.__init__(self, “appname”)
 ```
 
+## Example
+
 From there, you can add methods to the class to create services. Each method will be treated as an intent in the Crimata System. Let's write a service for booking a plane ticket.
 
 ```python
@@ -45,4 +47,12 @@ Next, we fetch a date and location for travel. Notice we can also pass in our ow
 
 We use the informating we've fetched to search our tickets database for what is available. We find a match and can ask the client to comfirm by fetching a polar entity (yes or no). If the client affirms, we book the ticket.
 
+```python
+        self.notify(f"The ticket is booked.", end=True)
+```
 
+Finally, we use notify() to send a notification to the client letting them know the ticket is booked. Set end=True to let Crimata know the service is complete.
+
+## Next Steps
+
+Our Api is in the early stages. If your find this intriguing, please don't hesitate to reach out. Currently, our team must be in the loop for any new service added to the platform to ensure everything works well and the intent (along with it's training phrases) is logged into the system.
