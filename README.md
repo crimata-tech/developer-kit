@@ -1,5 +1,7 @@
 # Developer Kit
-Developer tools for writing Crimata apps
+Developer tools for writing Crimata apps.
+
+**This is mainly for internal use (not third party development) at the moment.
 
 ## Getting Started
 ```python
