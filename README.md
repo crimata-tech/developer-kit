@@ -32,12 +32,12 @@ Let's assume we are an airline and our booking backend needs a name and an email
 Next, we fetch a date and location for travel. Notice we can also pass in our own envoking text if we feel that we need more detail.
 
 ```python
-        # Our airline specific code --
+        # Our airline specific code -------------
         ticket = search_ticket_db(date, location)
         
         # “Does 3:00PM on June 14th work?”
         response = format_ticket_response(ticket)
-        # --
+        # ---------------------------------------
         
         if self.fetch(“polar”, text=response):
             self.book_ticket(ticket)
